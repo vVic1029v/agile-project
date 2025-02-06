@@ -27,4 +27,4 @@ To learn more about Next.js, take a look at the following resources:
 # agile-project
 school management project
 
-ceva o propozitie
+ceva ce vreau eu
