@@ -83,21 +83,27 @@ const FinanceChart = () => {
             bottom: 5,
           }}
         >
-          <CartesianGrid strokeDasharray="3 3" />
+          <CartesianGrid strokeDasharray="3 3" stroke="#ddd" />
           <XAxis dataKey="name" 
           axisLine={false}
           tick={{fill:"#d1d5db"}}
           tickLine={false}
+          tickMargin={10}
           />
           <YAxis 
             axisLine={false}
             tick={{fill:"#d1d5db"} }
             tickLine={false}
+            tickMargin={20}
           />
           <Tooltip />
-          <Legend />
-          <Line type="monotone" dataKey="income" stroke="#CFCEFF" activeDot={{ r: 8 }} />
-          <Line type="monotone" dataKey="expense" stroke="#C3EBFA" />
+          <Legend 
+            align="center"
+            verticalAlign="top"
+            wrapperStyle={{paddingTop: "10px",paddingBottom:"30px"}}
+          />
+          <Line type="monotone" dataKey="income" stroke="#CFCEFF" activeDot={{ r: 8 }} strokeWidth={5} />
+          <Line type="monotone" dataKey="expense" stroke="#C3EBFA" strokeWidth={5}/>
         </LineChart>
       </ResponsiveContainer>
             
